@@ -59,7 +59,7 @@ import static org.mockito.Mockito.doReturn;
     @Test public void ensureTheViewsAreInitializedCorrectly() throws Exception {
         promotionsViewModel.initializeViews();
 
-        assertEquals(View.GONE, promotionsViewModel.promotionsRecycler.get());
-        assertEquals(View.VISIBLE, promotionsViewModel.promotionsProgress.get());
+        assertEquals(View.GONE, promotionsViewModel.getPromotionsRecycler().get());
+        assertEquals(View.VISIBLE, promotionsViewModel.getPromotionsProgress().get());
     }
 }
