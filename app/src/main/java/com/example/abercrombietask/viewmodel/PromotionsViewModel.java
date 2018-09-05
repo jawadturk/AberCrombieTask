@@ -79,7 +79,7 @@ public class PromotionsViewModel extends Observable {
 
         //using Retrofit
         //fetchPromotionsWithRetrofit();
-        //using volly
+        //using volley
         fetchPromotionsWithVolley();
 
     }
