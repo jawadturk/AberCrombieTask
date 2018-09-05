@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AberCrombieTask</string>
+    <string name="error_loading">Error loading promotions</string>
+</resources>

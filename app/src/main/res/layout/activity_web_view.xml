@@ -1,0 +1,30 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.abercrombietask.viewmodel.WebViewViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_pageLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:visibility="@{viewModel.pageLoadingProgress}" />
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:loadUrl="@{viewModel.url}"
+            app:setWebViewClient="@{viewModel.webViewClient}" />
+
+    </LinearLayout>
+</layout>
